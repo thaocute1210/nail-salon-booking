@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <title>Nail Salon Booking</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
 <body>
+  <img src="images/logo.png" alt="Nail Salon Logo">
   <h1>Nail Salon Booking</h1>
 
   <section>
@@ -17,7 +19,7 @@
 
   <section id="date-section" style="display: none">
     <h2>Date</h2>
-    <input type="date" id="date-input">
+    <input type="text" id="date-input" placeholder="Select a date">
   </section>
 
   <section id="availability-section" style="display: none">
@@ -27,13 +29,13 @@
 
   <section id="booking-form-section" style="display: none">
     <h2>Book Appointment</h2>
-    <p id="selection-info"></p> <!-- Add this line -->
+    <p id="selection-info"></p>
     <form id="booking-form">
       <input type="hidden" id="selected-time-slot">
       <input type="hidden" id="selected-technician-id">
-      <label>Name: <input type="text" id="customer-name" required></label><br>
-      <label>Phone: <input type="tel" id="phone" required></label><br>
-      <label>Email: <input type="email" id="email"></label><br>
+      <label>Name: <input type="text" id="customer-name" required></label>
+      <label>Phone: <input type="tel" id="phone" required></label>
+      <label>Email: <input type="email" id="email"></label>
       <button type="submit">Book Now</button>
     </form>
   </section>
@@ -43,6 +45,11 @@
     <ul id="appointments-list"></ul>
   </section>
 
+  <footer>
+    © 2025 Nail Salon Booking. All rights reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script src="script.js"></script>
 </body>
 </html>
