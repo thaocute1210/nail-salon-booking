@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-image: url('images/background.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #333;
+}
+h1 {
+  color: #ff69b4;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  font-size: 2.5em;
+}
+h2 {
+  color: #ff69b4;
+  border-bottom: 2px solid #ff69b4;
+  padding-bottom: 5px;
+  font-family: 'Playfair Display', serif;
+}
+section {
+  margin: 20px 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+section:hover {
+  transform: translateY(-5px);
+}
+label {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #555;
+}
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+button {
+  padding: 10px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+  font-family: 'Roboto', sans-serif;
+}
+button:hover {
+  background-color: #ff1493;
+  transform: scale(1.05);
+}
+button:active {
+  transform: scale(0.95);
+}
+#time-slots div {
+  margin: 10px 0;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 4px;
+}
+#time-slots ul {
+  list-style-type: none;
+  padding: 0;
+}
+#time-slots li {
+  margin: 5px 0;
+}
+#appointments-list li {
+  background-color: #fff0f5;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#appointments-list button {
+  background-color: #ff4444;
+}
+#appointments-list button:hover {
+  background-color: #cc0000;
+}
+#selection-info {
+  color: #ff69b4;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}

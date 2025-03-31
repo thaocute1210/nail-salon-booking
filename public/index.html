@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nail Salon Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Nail Salon Booking</h1>
+
+  <section>
+    <h2>Services</h2>
+    <select id="service-select">
+      <option value="">Select a service</option>
+    </select>
+  </section>
+
+  <section id="date-section" style="display: none">
+    <h2>Date</h2>
+    <input type="date" id="date-input">
+  </section>
+
+  <section id="availability-section" style="display: none">
+    <h2>Available Time Slots</h2>
+    <div id="time-slots"></div>
+  </section>
+
+  <section id="booking-form-section" style="display: none">
+    <h2>Book Appointment</h2>
+    <p id="selection-info"></p> <!-- Add this line -->
+    <form id="booking-form">
+      <input type="hidden" id="selected-time-slot">
+      <input type="hidden" id="selected-technician-id">
+      <label>Name: <input type="text" id="customer-name" required></label><br>
+      <label>Phone: <input type="tel" id="phone" required></label><br>
+      <label>Email: <input type="email" id="email"></label><br>
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <section id="appointments-section">
+    <h2>Your Appointments</h2>
+    <ul id="appointments-list"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
